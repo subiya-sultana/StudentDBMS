@@ -94,6 +94,7 @@ form ul li input.radiobtn{
     width: 10%;
     height: 20px;
     padding: 5px;
+    margin-top: 10px;
     outline: none;
 }
 form .button{

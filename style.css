@@ -1,6 +1,8 @@
 :root{
-    --main-color:  #0080ff;
-    --background-color: #0080ffcc;
+    /* --main-color:  #0080ff; */
+    /* --background-color: #0080ffcc; */
+    --background-color: #0050a1d8;
+    --main-color:  #0051a1;
 }
 *{
     margin: 0;
@@ -18,7 +20,6 @@
     align-items: center;
     box-sizing: border-box;
     background: linear-gradient(to right, #00c6ff,#0080ff); 
-    /* border: 2px solid green; */
 }
 .register-container .form-container{
     width: 60%;
@@ -116,6 +117,97 @@ form button:hover{
 }
 /* student register css ends here */
 
+/* admin login css starts here */
+.admin-login-form-container{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)),url('images/loginbg.jpg'); */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.2)),url('images/loginbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    filter: opacity(80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-login-form-container form{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+}
+.admin-login-form-container form h1{
+    color: var(--main-color);
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+    margin: 40px 0 80px 0;
+}
+.admin-login-form-container form h1:before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    left: 40%;
+    border-bottom: 6px solid var(--main-color);
+    border-radius: 5px;
+}
+.admin-login-form-container form .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 45px;
+    background: #ccc;
+    margin-bottom: 15px;
+  }
+.admin-login-form-container form .icon {
+    padding: 10px 0;
+    color: gray;
+    min-width: 40px;
+    text-align: center;
+}
+.admin-login-form-container form input {
+    width: 100%;
+    padding: 10px;
+    background: #ccc;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.admin-login-form-container form span{
+    padding-left: 40px;
+}
+.admin-login-form-container form .btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    margin: 0 40px;
+    /* border: 1px solid red; */
+}
+.admin-login-form-container form .btn button{
+    width: 125px;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.admin-login-form-container form .btn button#btn1{
+    background-color: #bbb;
+}
+.admin-login-form-container form .btn button#btn1:hover{
+    background-color: #ccc;
+}
+.admin-login-form-container form .btn button#btn2{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.admin-login-form-container form .btn button#btn2:hover{
+    background-color: var(--background-color);
+}
+/* admin login css ends here */
 
 
 

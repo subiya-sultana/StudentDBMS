@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QQGPT | Student registration</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/logo.jpg" sizes="96x96">
+    <!-- css file link -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -20,24 +23,25 @@
             </div>
             <div class="bottom-bar">
                 <h1>STUDENT REGISTRATION FORM</h1>
-                <form action="">
+                <form action="" id="myForm">
                     <ul>
                         <li class="flex-item-left">
                             <span>Student full name</span><br>
-                            <input type="text" placeholder="Enter student name" id="sname"> 
+                            <input type="text" placeholder="Enter student name" id="sname" required> 
                         </li>
                         <li class="flex-item-right">
                             <span>Student PIN</span><br>
-                            <input type="text" placeholder="Enter pin" id="pin"> 
+                            <input type="text" placeholder="Enter pin" id="pin" required> 
                         </li>
                         <li class="flex-item-left">
                             <span>Biometric Id</span><br>
-                            <input type="number" placeholder="Enter pin" id="biopin" value=""> 
+                            <input type="number" placeholder="Enter pin" id="biopin" value="" required> 
                         </li>
                         <li class="flex-item-right">
                             <span>Branch</span><br>
-                            <select name="" id="branch">
-                                <option value="0" selected disabled hidden>Select here</option>
+                            <select name="" id="branch" required>
+                                <!-- don't add value in first option -->
+                                <option value="" selected="true" disabled="disabled" hidden>Select here</option>
                                 <option value="DCE" name="">(DCE) Diploma in Civil Engineering</option>
                                 <option value="DME">(DME) Diploma in Mechanical Engineering</option>
                                 <option value="DECE">(DECE) Diploma Electronics and Communication Engineering</option>
@@ -48,8 +52,8 @@
                         </li>
                         <li class="flex-item-left">
                             <span>Semester level</span><br>
-                            <select name="" id="sem">
-                                <option value="0" selected disabled hidden>Select here</option>
+                            <select name="" id="sem" required>
+                                <option value="" selected="true" disabled="disabled" hidden>Select here</option>
                                 <option value="1st Semester">1st Semester</option>
                                 <option value="2nd Semester">2nd Semester</option>
                                 <option value="3rd Semester">3rd Semester</option>
@@ -60,8 +64,8 @@
                         </li>
                         <li class="flex-item-right">
                             <span>Year level</span><br>
-                            <select name="" id="year">
-                                <option value="0" selected disabled hidden>Select here</option>
+                            <select name="" id="year" required>
+                                <option value="" selected="true" disabled="disabled" hidden>Select here</option>
                                 <option value="1st year">1st year</option>
                                 <option value="2nd year">2nd year</option>
                                 <option value="3rd year">3rd year</option>
@@ -69,35 +73,35 @@
                         </li>
                         <li class="flex-item-left">
                             <span>Student contact number</span><br>
-                            <input type="number" placeholder="Enter number" id="scon"> 
+                            <input type="number" placeholder="Enter number" id="scon" required> 
                         </li>
                         <li class="flex-item-right">
                             <span>Aadhar number</span><br>
-                            <input type="number" placeholder="Enter Aadhar number" id="Aadhar" value=""> 
+                            <input type="number" placeholder="Enter Aadhar number" id="Aadhar" value="" required> 
                         </li>
                         <li class="flex-item-left">
                             <span>Email id</span><br>
-                            <input type="email" placeholder="Enter Email" id="Email"> 
+                            <input type="email" placeholder="Enter Email" id="Email" required> 
                         </li>
                         <li class="flex-item-right">
                             <span>Address</span><br>
-                            <input type="text" placeholder="Enter Address" id="address" value=""> 
+                            <input type="text" placeholder="Enter Address" id="address" value="" required> 
                         </li>
                         <li class="flex-item-right">
                             <span>Father name</span><br>
-                            <input type="text" placeholder="Enter Father name" id="fname"> 
+                            <input type="text" placeholder="Enter Father name" id="fname" required> 
                         </li>
                         <li class="flex-item-left">
                             <span>Father number</span><br>
-                            <input type="number" placeholder="Enter Father number" id="fnum"> 
+                            <input type="number" placeholder="Enter Father number" id="fnum" required> 
                         </li>
                         <li class="flex-item-left">
                             <span>Date of birth</span><br>
-                            <input type="date" placeholder="Enter Birth Date" id="dob"> 
+                            <input type="date" placeholder="Enter Birth Date" id="dob" required> 
                         </li>
                         <li class="flex-item-right">
                             <span>Gender</span><br>
-                            <input class="radiobtn" type="radio" name="gender" value="male" id="male"> Male
+                            <input class="radiobtn" type="radio" name="gender" value="male" id="male" required> Male
                             <input class="radiobtn" type="radio" name="gender" value="female" id="female"> Female
                         </li>
                     </ul>

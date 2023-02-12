@@ -121,8 +121,8 @@ form button:hover{
 .admin-login-form-container{
     width: 100vw;
     height: 100vh;
-    /* background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)),url('images/loginbg.jpg'); */
-    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.2)),url('images/loginbg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)),url('images/loginbg.jpg');
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.2)),url('images/loginbg.jpg'); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -184,10 +184,9 @@ form button:hover{
     justify-content: space-around;
     padding-top: 80px;
     margin: 0 40px;
-    /* border: 1px solid red; */
 }
 .admin-login-form-container form .btn button{
-    width: 125px;
+    width: 135px;
     height: 38px;
     border-radius: 50px;
     border: none;

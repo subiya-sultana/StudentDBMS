@@ -1,6 +1,8 @@
 :root{
-    --main-color:  #0080ff;
-    --background-color: #0080ffcc;
+    /* --main-color:  #0080ff;
+    --background-color: #0080ffcc; */
+    --background-color: #0050a1d8;
+    --main-color:  #0051a1;
 }
 *{
     margin: 0;

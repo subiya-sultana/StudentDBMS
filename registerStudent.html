@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QQGPT | Student registration</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/logo.jpg" sizes="96x96">
-    <!-- css file link -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,91 +24,91 @@
                     <ul>
                         <li class="flex-item-left">
                             <span>Student full name</span><br>
-                            <input type="text" placeholder="Enter student name"> 
+                            <input type="text" placeholder="Enter student name" id="sname"> 
                         </li>
                         <li class="flex-item-right">
                             <span>Student PIN</span><br>
-                            <input type="text" placeholder="Enter pin"> 
+                            <input type="text" placeholder="Enter pin" id="pin"> 
                         </li>
                         <li class="flex-item-left">
                             <span>Biometric Id</span><br>
-                            <input type="number" placeholder="Enter Biometric id"> 
+                            <input type="number" placeholder="Enter pin" id="biopin" value=""> 
                         </li>
                         <li class="flex-item-right">
                             <span>Branch</span><br>
-                            <select name="" id="">
-                                <option value="" selected disabled hidden>Select here</option>
-                                <option value="">(DCE) Diploma in Civil Engineerin</option>
-                                <option value="">(DME) Diploma in Mechanical Engineering</option>
-                                <option value="">(DECE) Diploma Electronics and Communication Engineering</option>
-                                <option value="">(DCME) Diploma in Computer Engineering</option>
-                                <option value="">(DEEE) Diploma in Electrical and Electronics Engineering</option>
-                                <option value="">(DPT) Diploma in Printing Technology</option>
+                            <select name="" id="branch">
+                                <option value="0" selected disabled hidden>Select here</option>
+                                <option value="DCE" name="">(DCE) Diploma in Civil Engineering</option>
+                                <option value="DME">(DME) Diploma in Mechanical Engineering</option>
+                                <option value="DECE">(DECE) Diploma Electronics and Communication Engineering</option>
+                                <option value="DCME">(DCME) Diploma in Computer Engineering</option>
+                                <option value="DEEE">(DEEE) Diploma in Electrical and Electronics Engineering</option>
+                                <option value="DPT">(DPT) Diploma in Printing Technology</option>
                             </select> 
                         </li>
                         <li class="flex-item-left">
                             <span>Semester level</span><br>
-                            <select name="" id="">
-                                <option value="" selected disabled hidden>Select here</option>
-                                <option value="">1st Semester</option>
-                                <option value="">2nd Semester</option>
-                                <option value="">3rd Semester</option>
-                                <option value="">4th Semester</option>
-                                <option value="">5th Semester</option>
-                                <option value="">6th Semester</option>
+                            <select name="" id="sem">
+                                <option value="0" selected disabled hidden>Select here</option>
+                                <option value="1st Semester">1st Semester</option>
+                                <option value="2nd Semester">2nd Semester</option>
+                                <option value="3rd Semester">3rd Semester</option>
+                                <option value="4th Semester">4th Semester</option>
+                                <option value="5th Semester">5th Semester</option>
+                                <option value="6th Semester">6th Semester</option>
                             </select> 
                         </li>
                         <li class="flex-item-right">
                             <span>Year level</span><br>
-                            <select name="" id="">
-                                <option value="" selected disabled hidden>Select here</option>
-                                <option value="">1st year</option>
-                                <option value="">2nd year</option>
-                                <option value="">3rd year</option>
+                            <select name="" id="year">
+                                <option value="0" selected disabled hidden>Select here</option>
+                                <option value="1st year">1st year</option>
+                                <option value="2nd year">2nd year</option>
+                                <option value="3rd year">3rd year</option>
                             </select> 
                         </li>
                         <li class="flex-item-left">
                             <span>Student contact number</span><br>
-                            <input type="number" placeholder="Enter number"> 
+                            <input type="number" placeholder="Enter number" id="scon"> 
                         </li>
                         <li class="flex-item-right">
                             <span>Aadhar number</span><br>
-                            <input type="number" placeholder="Enter Aadhar number"> 
+                            <input type="number" placeholder="Enter Aadhar number" id="Aadhar" value=""> 
                         </li>
                         <li class="flex-item-left">
                             <span>Email id</span><br>
-                            <input type="email" placeholder="Enter Email"> 
+                            <input type="email" placeholder="Enter Email" id="Email"> 
                         </li>
                         <li class="flex-item-right">
                             <span>Address</span><br>
-                            <input type="text" placeholder="Enter Address"> 
+                            <input type="text" placeholder="Enter Address" id="address" value=""> 
                         </li>
                         <li class="flex-item-right">
                             <span>Father name</span><br>
-                            <input type="text" placeholder="Enter Father name"> 
+                            <input type="text" placeholder="Enter Father name" id="fname"> 
                         </li>
                         <li class="flex-item-left">
                             <span>Father number</span><br>
-                            <input type="number" placeholder="Enter Father number"> 
+                            <input type="number" placeholder="Enter Father number" id="fnum"> 
                         </li>
                         <li class="flex-item-left">
                             <span>Date of birth</span><br>
-                            <input type="date" placeholder="Enter Birth Date"> 
+                            <input type="date" placeholder="Enter Birth Date" id="dob"> 
                         </li>
                         <li class="flex-item-right">
                             <span>Gender</span><br>
-                            <input class="radiobtn" type="radio" name="gender" value="male"> Male
-                            <input class="radiobtn" type="radio" name="gender" value="female"> Female
+                            <input class="radiobtn" type="radio" name="gender" value="male" id="male"> Male
+                            <input class="radiobtn" type="radio" name="gender" value="female" id="female"> Female
                         </li>
                     </ul>
                     <div class="button">
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="sub" onclick="SubmitEvent()">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
+    <script src="index.js"></script>
 
 </body>
 </html>

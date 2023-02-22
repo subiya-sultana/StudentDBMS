@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.jpg" sizes="96x96">
+    <!-- homepage css file link -->
+    <link rel="stylesheet" href="AdminServices.css">
+    <!-- font aewsome cdn -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- storyset attibute -->
+    <a href="https://storyset.com/user"></a>
+</head>
+<body>
+    <!-- Admin services navbar starts here -->
+    <nav>
+        <div class="left-icons">
+            <a class="active icons fa fa-solid fa-bars"></a>
+            <a href="/homepage.html" class="icons fa fa-solid fa-home"></a>
+            <a class="icons fa fa-solid fa-user"></a>
+        </div>
+        <div class="left-icons">
+            <a href="adminLogin.html"><button class="btn">Logout</button></a>
+        </div>
+    </nav>
+    <!-- Admin services navbar ends here -->
+    <section class="wrapper">
+        <!-- sidebar section starts here -->
+        <section class="sidebar">
+            <div class="top">
+                <div class="sidebar-title">
+                    <i class="fa fa-solid fa-angle-down"></i>
+                    <h3>Admin Services</h3>
+                </div>
+                <ul>
+                    <li id="registerStudents">
+                        <a href="registerStudent.html" target="_blank">
+                            <i class="fa fa-solid fa-plus"></i>
+                            <span>Register Student</span>
+                        </a>
+                    </li>
+                    <li id="viewStudentInfo">
+                        <a href="viewStudentInfo.html" target="_blank">
+                            <i class="fa fa-solid fa-info-circle"></i>
+                            <span>View Student Info</span>
+                        </a>
+                    </li>
+                    <li id="updateResults">
+                        <a href="">
+                            <i class=" fa fa-solid fa-graduation-cap"></i>
+                            <span>Update Results</span>
+                        </a>
+                    </li>
+                    <li id="updateConsolidatedResults">
+                        <a href="">
+                            <i class="fa fa-solid fa-calendar"></i>
+                            <span>Update Consolidated Results</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- sidebar section ends here -->
+         
+        <!-- content section starts here -->
+        <section id="content-today" class="content">
+
+            <h1 class="tittle">Hello Username! Welcome to Admin services.</h1>
+            <p>Here you can easily register new students, view all exixting students data and modify it, <br>Update student results/ consolidated results. </p>
+            <div class="img-container">
+                <img src="/images/adminlogin.gif" alt="" class="admin-services-image">
+            </div>
+        
+        </section>
+        <!-- content section ends here -->
+
+    </section>
+
+    <script src="AdminService.js"></script>
+</body>
+</html>

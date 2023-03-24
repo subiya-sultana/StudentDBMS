@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js">
     <!-- font aewsome cdn -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -55,7 +55,10 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Action</td>
+                        <td class="action">
+                          <button class="editBtn actionBtn btn btn-success"><i class=" fa fa-solid fa-edit"></i></button>
+                          <button class="deleteBtn actionBtn btn btn-danger"><i class=" deleteBtn fa fa-solid fa-trash-o"></i></button>
+                        </td>
                         <td>Subiya</td>
                         <td>20061-cm-036</td>
                         <td>4678</td>
@@ -72,7 +75,10 @@
                         <td>female</tr>
                       </tr>
                       <tr>
-                        <td>Action</td>
+                        <td class="action">
+                          <button class="actionBtn btn btn-success"><i class=" fa fa-solid fa-edit"></i></button>
+                          <button class="actionBtn btn btn-danger"><i class=" deleteBtn fa fa-solid fa-trash-o"></i></button>
+                        </td>
                         <td>Student</td>
                         <td>20061-cm-099</td>
                         <td>3478</td>
@@ -89,7 +95,10 @@
                         <td>female</td>
                       </tr>
                       <tr>
-                        <td>Action</td>
+                        <td class="action">
+                          <button class="actionBtn btn btn-success"><i class=" fa fa-solid fa-edit"></i></button>
+                          <button class="actionBtn btn btn-danger"><i class=" deleteBtn fa fa-solid fa-trash-o"></i></button>
+                        </td>
                         <td>another student</td>
                         <td>20061-ee-036</td>
                         <td>46783467</td>
@@ -119,6 +128,13 @@
         $(function() {
             $(document).ready(function() {
                 $('#example').DataTable();
+                 // modal js
+    $('.modalBtn').click(function(){
+        $('.modal').css('display', 'block');
+    });
+    $('.modalClose').click(function(){
+        $('.modal').css('display', 'none');
+    });
             });
         });
     </script>

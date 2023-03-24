@@ -13,6 +13,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- storyset attibute -->
+    <a href="https://storyset.com/user"></a>
+    <!-- AOS animate on scroll liblary cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <nav>
@@ -20,7 +25,7 @@
             <img src="images/logo.jpg" alt="">
         </a>
         <div>
-            <ul>
+            <ul id="first">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -28,29 +33,220 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#services">Services</a>
-                    <ul>
-                        <li><a href="#">Sevice one</a></li>
-                        <li><a href="#">Sevice two</a></li>
-            
-                        <li><a href="#">Sevice three</a></li>
-                        <li><a href="#">Sevice four</a></li>
-                    </ul>            
+                    <a href="#services">Student Services</a>
+                </li>
+                <li>
+                    <a href="#services">Admin Services</a>
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="btn-container">
             <a href="AdminServices/adminLogin.html"><button class="btn">Admin Login</button></a>
             <label class="icon">
                 <i class="icons fa fa-solid fa-bars"></i>
             </label>
         </div>
     </nav>
-    this is home page
-    
+    <header id="home">
+        <div class="left-container" >
+            <h1 data-aos="fade-down">QQGPT STUDENT DBMS</h1>
+            <h2 data-aos="fade-right">One-stop Solution For College Data Management Needs!</h2>
+            <p data-aos="fade-right">A free Online student database management software which will help you to manage student data and access it, at anytime from anywhere. Offers a user-friendly dashboard with login access for staff to manage Student data like personal information, resullts, cosolidated resullts and more with ease.</p>
+            <div class="btn-container" data-aos="fade-up" >
+                <a href="AdminServices/adminLogin.html"><button class="btn">Admin Login</button></a>
+            </div>
+        </div>
+        <div class="right-container" data-aos="fade-right">
+            <img id="HeaderImage" src="images/HeaderImageEntrance.gif">
+        </div>
+    </header>
+    <!-- why our DBMS section starts here -->
+    <section class="why-our-dbms">
+        <div class="left-container" data-aos="fade-right">
+            <img id="why-our-dbms" src="images/why-our-dbms1.gif" alt="">
+        </div>
+        <div class="right-container" data-aos="fade-up">
+            <h1 data-aos="fade-down">Why Our DBMS?</h1>
+            <p>When it comes down to choosing Database Management System, Major requirements are:</p>
+            <ul>
+                <li>Data security.</li>
+                <li>Easy to operate.</li>
+                <li>Free and Faster.</li>
+                <li>Centralized Database.</li>
+            </ul>
+            <p>And that is exactly what you get from our DBMS - a free online student database management website that is easy to operate and features dozens of collaboration tools</p>
+            <div class="btn-container" >
+                <a href="AdminServices/adminLogin.html"><button class="btn">Admin Login</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- why our DBMS  section ends here -->
+    <!-- about section starts here -->
+    <section id="about" class="about">
+        <h1 data-aos="fade-up" >About Our DBMS</h1>
+        <span data-aos="fade-up">Delightfully simple and deceptively powerful database management tool for you.</span>
+        <div class="container">
+            <div class="box" data-aos="fade-up" >
+                <div class="about-img-container">
+                    <img src="images/about1.png" alt="">
+                </div>
+                <h3>Data Security</h3>
+                <p>We allows access only to those who are authorized by the college authorities. This ensures the security and confidentiality of all student-related data.</p>
+            </div>
+            <div class="box" data-aos="fade-up" >
+                <div class="about-img-container">
+                    <img src="images/about2.png" alt="">
+                </div>
+                <h3>Faster Functionality</h3>
+                <p>Registering students, updating student personal details, updating student results or viewing student details and results is faster compared to traditional methods.</p>
+            </div>
+            <div class="box" data-aos="fade-up" >
+                <div class="about-img-container">
+                    <img src="images/about3.png" alt="">
+                </div>
+                <h3>Easily Accessible</h3>
+                <p>Anyone can use our software from anywhere with the help of the internet and browser. </p>
+            </div>
+            <div class="box" data-aos="fade-up" >
+                <div class="about-img-container">
+                    <img src="images/about4.png" alt="">
+                </div>
+                <h3>Easy To Operate</h3>
+                <p>We provide simple interface so that admins can easily modify data.</p>
+            </div>
+            <div class="box" data-aos="fade-up" >
+                <div class="about-img-container">
+                    <img src="images/about5.png" alt="">
+                </div>
+                <h3>Easy Maintance Of Student Info</h3>
+                <p>Admins can easily maintain and modify students information like student personal details, grades etc.</p>
+            </div>
+            <div class="box" data-aos="fade-up" >
+                <div class="about-img-container">
+                    <img src="images/about6.png" alt="">
+                </div>
+                <h3>Easy Access To Data</h3>
+                <p>We also allow student to view their results and consolidated results.</p>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends here -->
+    <!-- service section starts here -->
+    <section id="services" class="services">
+        <div class="student-services">
+            <h1>Student Services</h1>
+            <div class="card-container" >
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+                        <img src="images/viewResults.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>For viewing the student results click the followig button:</p>
+                        <button>View Results</button>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+                        <img src="images/viewConsolidatedResults.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>For viewing the consolidated results click the followig button:</p>
+                        <button>View Consolided Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin-services">
+            <h1>Admin Services</h1>
+            <div class="card-container">
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+                        <img src="images/about5.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>Want to register a new student in your database?? click the following button:</p>
+                        <button>Register a student</button>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+                        <img src="images/about6.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>To view the student Information and to modify that click the following button:</p>
+                        <button>View Student Info</button>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+                        <img src="images/about2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>Want to update the student results?? click the following button: </p>
+                        <button>Update Results</button>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+                        <img src="images/about4.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>Want to update the student consolidated results?? click the following button:</p>
+                        <button>Update Consolidated Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section ends here -->
+    <footer class="new">
+        <div class="first">
+            <div class="top">
+                <img src="images/logo.jpg" alt="">
+                <h2>QQGPT <br>Student DBMS</h2>
+            </div>
+            <div class="bottom" >
+                <a href="AdminServices/adminLogin.html"><button class="btn">Login as Admin now!</button></a>
+            </div>
+        </div>
+        <div class="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Student Services</a></li>
+                <li><a href="#services">Admin Services</a></li>
+            </ul>
+        </div>
+        <div class="share">
+            <h2>Share</h2>
+            <ul>
+                <li><a href="">Facebook </a></li>
+                <li><a href="">Instagram </a></li>
+                <li><a href="">Twitter </a></li>
+                <li><a href="">github </a></li>
+            </ul>
+        </div>
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="">View results </a></li>
+                <li><a href="">Register a student</a></li>
+                <li><a href="">View Student Info </a></li>
+                <li><a href="">Update Results </a></li>
+            </ul>
+        </div>
+        <div class="last">
+            <p>Done as a part of project work.</p>
+        </div>
+    </footer>
 
-
-
+    <!-- external js file -->
     <script src="homepage.js"></script>
+    <!-- AOS script (using it from github just to give animate on scroll effect) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

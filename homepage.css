@@ -9,7 +9,7 @@
     padding: 0;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     scroll-behavior: smooth;
 }
 .icons{
@@ -28,7 +28,7 @@
     width: 130px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500 ;
     color: white;
     background-color:var(--main-color);
@@ -52,30 +52,27 @@ nav{
     z-index: 10;
 }
 nav a img{
-    margin-top: 10px;
-    width: 75px;
+    margin-top: 6px;
+    width: 60px;
 }
-nav ul{
+nav div ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    width: 55%;
 }
 nav ul li{
-    font-size: 22px;
-    padding: 15px 10px 0 10px;
+    font-size: 20px;
+    padding: 8px 12px 0 12px;
 }
 nav ul li a{
     color: black;
     white-space: nowrap;
+    
 }
 nav ul li a:hover{
     color: var(--main-color);
     text-decoration: underline;
     text-underline-offset: 5px;
-}
-nav button{
-    margin-right: 30px;
 }
 nav div i{
     display: none !important;
@@ -84,17 +81,305 @@ nav div i{
     right: 0px;  
 }
 /* navbar css ends here  */
-body{
-    background-color: #e7e7e7;
 
+body{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    overflow-x: hidden;
+}
+/* header css starts here */
+header, section.why-our-dbms{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+header .left-container, section.why-our-dbms .right-container{
+    flex-basis: 55%;
+    color: var(--main-color);
+    padding: 20px 30px 20px 8%;
+    margin: auto;
+}
+header .left-container h1, section.why-our-dbms .right-container h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+header .left-container p, section.why-our-dbms .right-container p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+header .right-container, section.why-our-dbms .left-container{
+    flex-basis: 40%;
+    text-align: center;
+    margin: auto;
+}
+header .right-container img, section.why-our-dbms .left-container img{
+    width: 100%;
+    border-radius: 40px;
+}
+/* header css ends here */
+
+/* why-our-dbms css starts here */
+section.why-our-dbms{
+    background-color: #D1DFED;
+    border-radius: 40px;
+}
+section.why-our-dbms .right-container{
+    padding: 20px 30px;
+}
+section.why-our-dbms .right-container ul{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+/* why-our-dbms css ends here */
+
+/* about section css starts here */
+.about h1{
+    text-align: center;
+    font-size: 34px;
+    padding-top: 40px;
+}
+.about h1:hover{
+    color: var(--main-color);
+}
+.about span{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: grey;
+}
+.about .container{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important ;
+}
+.about .container .box{
+    width: 28%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.about .container .box:hover{
+    color: var(--main-color);
+}
+.about-img-container{
+    background-image: linear-gradient(to bottom right, var(--main-color),rgb(135, 195, 255));
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .container .box:hover .about-img-container{
+    background-image: linear-gradient(to bottom right, var(--main-color),var(--background-color));
+}
+.about-img-container img{
+    width: 100%;
+}
+/* about section css ends here */
+
+/* service section css starts here */
+section.services{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 40px 0;
+}
+section.services h1{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 36px;
+    color: var(--main-color);
+}
+section.services .card-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:auto;
+}
+section.services .card-container .card{
+    background-color: #fff;
+    flex-basis: 40%;
+    min-height: 200px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+section.services .card-container .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition:1s;
+    transform: translateY(-6px) !important;
+}
+section.services .card-img{
+    height: 100%;
+    flex-basis: 38%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, var(--main-color),rgb(24, 139, 255));
+} 
+section.services .card-img img{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+} 
+section.services .card .card-body{
+    flex-basis: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+section.services .card .card-body p{
+    font-size: 18px;
+    color: var(--main-color);
+    padding: 3% 10% ;
+}
+section.services .card .card-body button{
+    text-align: center;
+    width: 80%;
+    min-height: 38px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+section.services .card .card-body button:hover{
+    background-color: var(--background-color);
+    color: #fff;
+    transition: 1s;
+} 
+/* service section css ends here */
+
+footer{
+    background: linear-gradient(to top left, var(--background-color) 50%,#0a73dbf3 );
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0 40px 0;
+}
+footer div{
+    padding: 10px;
+}
+footer div.first .top img{
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 4px 4px 0 4px;
+    margin-right: 6px;
+    background-color: #fff;
+}
+footer div.first .top{
+    display: flex;
+}
+footer div.first .bottom{
+    text-align: center;
+}
+footer div.first .bottom button{
+    border: 2px solid #fff;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5px;
+    transition: 1s;
+}
+footer div.first .bottom button:hover{
+    background-color: var(--main-color);
+}
+footer div.share, div.links, div.services{
+    text-align: center;
+} 
+footer div.share ul li, div.links  ul li, div.services ul li{
+    list-style: none;
+    padding: 1px 0 ;
+    cursor: pointer;
+} 
+footer div.share ul li a, div.links  ul li a, div.services ul li a{
+    color: #fff;
+} 
+footer div.share ul li a:hover, div.links  ul li a:hover, div.services ul li a:hover{
+    text-decoration: underline;
+} 
+
+footer div.last{
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff88;
 }
 
 
 
 
-
-
 /* responsive */
+@media screen and (max-width:800px) {
+    nav ul li{
+        font-size: 18px;
+        padding: 8px 5px 0 5px;
+    }
+    header .left-container{
+        padding: 20px 20px 20px 6%;
+    }
+    header .left-container h1, section.why-our-dbms .right-container h1{
+        font-size: 30px;
+    }
+    header .left-container h2{
+        font-size: 22px;
+    }
+    header .left-container p{
+        font-size: 18px;
+    }
+    section.why-our-dbms .right-container p,section.why-our-dbms .right-container li{
+        font-size: 18px;
+    }
+    .about .container{
+        width: 90%;
+    }
+    .about .container .box{
+        width: 40%;
+    }
+    section.services .card-container{
+        width: 90%;
+    }
+    section.services .card-container .card{
+        flex-basis: 40%;
+    }
+    section.services .card-container .card{
+        flex-direction: column;
+    }
+    section.services .card-img{
+        border-radius: 15px;
+    } 
+}
 @media screen and (max-width:600px) {
     nav button{
         display: none;
@@ -104,10 +389,8 @@ body{
     }
     nav div ul{
         position: absolute;
-        top: 95px;
+        top: 75px;
         left:0;
-        /* left: -9999px;  */
-        right: 0;
         width: 100vw;
         background:#f5f7f7;
         text-align: center;
@@ -119,19 +402,59 @@ body{
     nav div ul li{
         line-height: 30px;
         margin: 7px;
-        font-size: 22px;
+        font-size: 20px;
         opacity: 0;
         padding: 10px 0;
     }
     nav div ul li:first-child{
-        padding-top: 50px;
+        padding-top: 20px;
     }
     nav div ul.active{
-        height: 400px;
-        background-color: #eeeeee;
-
+        height: 300px;
+        background-color: #fff9ff;
     }
     nav div ul.active li {
         opacity: 1;
     }
+    header{
+        flex-direction: column-reverse;
+    }
+    header .left-container{
+        padding-top: 0px;
+        position: relative;
+        top: -50px;
+    }
+    header .right-container img{
+        width: 98%;
+        position: relative;
+        top: -40px;
+    }
+    section.why-our-dbms{
+        flex-direction: column;
+    }
+    .about .container{
+        width: 100%;
+    }
+    .about .container .box{
+        width: 80%;
+    }
+    section.services .card-container{
+        width: 90%;
+    }
+    section.services .card-container .card{
+        flex-basis: 90%;
+    }
+}
+@media screen and (max-width:150px) {
+    nav{
+        min-width: 150px;
+    }
+    nav div ul{
+        width: 100%;
+        overflow: scroll;
+    }
+    nav div ul li{
+        font-size: 18px;
+    }
+
 }

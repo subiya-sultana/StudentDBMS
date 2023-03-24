@@ -16,6 +16,7 @@ function SubmitEvent() {
   let dob = document.getElementById("dob").value;
   var gen1 = document.getElementById('male');
   var gen2 = document.getElementById('female');
+  var scheme = document.getElementById('scheme');
 
   let allAreFilled = true;
   document.getElementById("myForm").querySelectorAll("[required]").forEach(function(i) {
@@ -54,6 +55,7 @@ function SubmitEvent() {
       alert("You selected: " + Email);
       alert("entered father name is "+fname);
       alert("entered father number is "+fnum);
+      alert("entered scheme number is "+scheme);
       alert("entered date of birth is  "+dob);
       alert("all values entered");
     }

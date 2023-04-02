@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQGPT | Student Future Details </title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.jpg" sizes="96x96">
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="future-details-container">
+        <form action="">
+            <ul>
+                <li class="">
+                    <span>Batch:</span><br>
+                    <input type="text" name="" id="" placeholder="Enter Batch">
+                </li>
+                <li class="">
+                    <span>Branch:</span><br>
+                    <select name="" id="branch" required>
+                        <!-- don't add value in first option -->
+                        <option value="" selected="true" disabled="disabled" hidden>Select here</option>
+                        <option value="DCE" name="">(DCE) Diploma in Civil Engineering</option>
+                        <option value="DME">(DME) Diploma in Mechanical Engineering</option>
+                        <option value="DECE">(DECE) Diploma Electronics and Communication Engineering</option>
+                        <option value="DCME">(DCME) Diploma in Computer Engineering</option>
+                        <option value="DEEE">(DEEE) Diploma in Electrical and Electronics Engineering</option>
+                        <option value="DPT">(DPT) Diploma in Printing Technology</option>
+                    </select> 
+                </li>
+                <li>
+                    <span>Select a file:</span><br>
+                    <input type="file" id="myFile" name="filename">
+                </li>
+                <li class="button">
+                    <button type="submit" id="sub" onclick="SubmitEvent()">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    
+</body>
+</html>

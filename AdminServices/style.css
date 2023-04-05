@@ -259,28 +259,36 @@ body{
 /* view student info section css ends here */
 
 /* student future info section css starts here */
-.future-details-container{
+.stu-info-form-conatiner,.future-details-container{
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 50px 0;
 }
-.future-details-container form{
+.stu-info-form-conatiner form, .future-details-container form{
     width: 90%;
     background-color: #eee;
     padding: 40px 0;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.future-details-container form ul{
+.stu-info-form-conatiner{
+    margin: 50px 0 10px 0;
+}
+.stu-info-form-conatiner form{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 3px;
+}
+.stu-info-form-conatiner form ul, .future-details-container form ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.future-details-container form ul li{
+.stu-info-form-conatiner form ul li, .future-details-container form ul li{
     list-style: none;
     margin: 2px;
 }
-.future-details-container form ul li input{
+.stu-info-form-conatiner form ul li input, .future-details-container form ul li input{
     width: 250px;
     padding: 4px 0;
 }
@@ -293,16 +301,16 @@ body{
     border-radius: 3px;
 
 }
-.future-details-container form ul li select{
+.stu-info-form-conatiner form ul li select, .future-details-container form ul li select{
     width: 250px;
     padding: 4px 0;
 }
-.future-details-container form ul li.button{
+.stu-info-form-conatiner form ul li.button , .future-details-container form ul li.button{
     width: 250px;
     text-align: center;
 }
 
-.future-details-container button{
+.stu-info-form-conatiner form ul li button, .future-details-container button{
     width: 100px;
     background-color: var(--main-color);
     color:#fff;
@@ -352,7 +360,7 @@ body{
     .admin-login-form-container form .btn button:first-child{
         margin-bottom: 4px;
     }
-    .future-details-container form {
+    .stu-info-form-conatiner form, .future-details-container form {
        min-width: 300px;
     }
 }

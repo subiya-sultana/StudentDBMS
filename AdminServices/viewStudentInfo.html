@@ -28,6 +28,36 @@
         <header class="text-center text-white">
           <h1 class="display-4">VIEW STUDENT INFO</h1>
         </header>
+        <div class="stu-info-form-conatiner" >
+          <form action="">
+            <ul>
+                <li class="">
+                    <span>Batch:</span><br>
+                    <input type="text" name="" id="" placeholder="Enter Batch">
+                </li>
+                <li>
+                  <span>Pin:</span><br>
+                  <input type="text" name="" id="" placeholder="Enter pin">
+                </li>
+                <li class="">
+                    <span>Branch:</span><br>
+                    <select name="" id="branch" required>
+                        <!-- don't add value in first option -->
+                        <option value="" selected="true" disabled="disabled" hidden>Select here</option>
+                        <option value="DCE" name="">(DCE) Diploma in Civil Engineering</option>
+                        <option value="DME">(DME) Diploma in Mechanical Engineering</option>
+                        <option value="DECE">(DECE) Diploma Electronics and Communication Engineering</option>
+                        <option value="DCME">(DCME) Diploma in Computer Engineering</option>
+                        <option value="DEEE">(DEEE) Diploma in Electrical and Electronics Engineering</option>
+                        <option value="DPT">(DPT) Diploma in Printing Technology</option>
+                    </select> 
+                </li>
+                <li class="button">
+                    <button type="submit" id="sub" onclick="SubmitEvent()">Submit</button>
+                </li>
+            </ul>
+        </form>
+        </div>
         <div class="row py-5">
           <div class="col-lg-12 mx-auto">
             <div class="card rounded shadow border-0">
